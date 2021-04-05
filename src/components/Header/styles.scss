@@ -1,6 +1,7 @@
 .header {
   height: 6.5rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(80, 29, 29);
 
   .wrap {
     position: relative;
@@ -9,10 +10,10 @@
     margin: 0 auto;
 
     .logo {
-      width: 13rem;
+      width: 27rem;
       position: absolute;
       top: 50%;
-      left: 10px;
+      left: 0px;
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       transform: translateY(-50%);

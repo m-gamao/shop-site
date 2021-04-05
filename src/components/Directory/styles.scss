@@ -15,6 +15,18 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+
+      .button {
+        background-color: #ecf1b3;
+        border: none;
+        position: absolute;
+        color: rgb(8, 2, 2);
+        padding: 0px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+      }
     }
   }
 }

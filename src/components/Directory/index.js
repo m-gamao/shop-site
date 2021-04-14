@@ -10,7 +10,7 @@ const Directory = (props) => {
     <div className="directory">
       <div className="wrap">
         <div
-          className="item"
+          className="image"
           style={{
             backgroundImage: `url(${ShopWomens})`,
           }}
@@ -23,7 +23,7 @@ const Directory = (props) => {
           </Link>
         </div>
         <div
-          className="item"
+          className="image"
           style={{
             backgroundImage: `url(${ShopMens})`,
           }}

@@ -6,7 +6,7 @@
     width: 100%;
     height: 100vh;
 
-    .item {
+    .image {
       position: relative;
       width: 50%;
       height: 100%;
@@ -15,17 +15,21 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .button {
-        background-color: #ecf1b3;
-        border: none;
-        position: absolute;
+        background-color: white;
+        // position: absolute; // --- Absolute moves the element to top left corner of the
+        //  parent element that it's in.
         color: rgb(8, 2, 2);
         padding: 0px 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 22px;
+        font-size: 20px;
+        cursor: pointer;
       }
     }
   }

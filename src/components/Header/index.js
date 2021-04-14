@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.scss";
 import Logo from "./../../assets/logo.png";
 import { Link } from "react-router-dom";
+import Registration from "./../../pages/Registration";
 
 const Header = (props) => {
   return (
@@ -16,10 +17,10 @@ const Header = (props) => {
       <div className="callToActions">
         <ul>
           <li>
-            <Link to="/registration">Register</Link>
+            <Link to="/registration">REGISTER</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/login">LOGIN</Link>
           </li>
         </ul>
       </div>

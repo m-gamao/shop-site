@@ -27,7 +27,6 @@ function App() {
           )}
         />
         <Route
-          exact
           path="/registration"
           render={() => (
             <MainLayout>
@@ -36,7 +35,6 @@ function App() {
           )}
         />
         <Route
-          exact
           path="/login"
           render={() => (
             <MainLayout>

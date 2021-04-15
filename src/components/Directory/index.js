@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import ShopMens from "./../../assets/ShopMens.jpg";
-import ShopWomens from "./../../assets/ShopWomens.jpg";
+import mens1 from "./../../assets/mens1.jpeg";
+import womens2 from "./../../assets/womens2.jpeg";
 import "./styles.scss";
 
 const Directory = (props) => {
@@ -12,7 +12,7 @@ const Directory = (props) => {
         <div
           className="image"
           style={{
-            backgroundImage: `url(${ShopWomens})`,
+            backgroundImage: `url(${womens2})`,
           }}
         >
           <Link to="/search/womens">
@@ -25,7 +25,7 @@ const Directory = (props) => {
         <div
           className="image"
           style={{
-            backgroundImage: `url(${ShopMens})`,
+            backgroundImage: `url(${mens1})`,
           }}
         >
           <Link to="/search/mens">

@@ -1,1 +1,3 @@
-updated on 4/14/21.- mg.
+Steps:
+
+1. Video #3 Google sign-in.

@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
 .header {
   height: 6.5rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: rgb(224, 224, 201);
   // background-color: rgb(80, 29, 29);
+  font: black;
 
   .wrap {
     position: relative;
@@ -11,13 +14,17 @@
     margin: 0 auto;
 
     .logo {
-      width: 27rem;
+      width: 30rem;
       position: absolute;
       top: 50%;
-      left: 0px;
+      left: 20px;
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       transform: translateY(-50%);
+      font-family: "Zen Dots", cursive;
+      font-size: 40px;
+      // border: solid 2px red;
+      font: black;
 
       img {
         display: block;

@@ -10,7 +10,8 @@ const Header = (props) => {
       <div className="wrap">
         <div className="logo">
           <Link to="/">
-            <img src={Logo} alt="simpletut logo" />
+            latitude
+            {/* <img src={Logo} alt="simpletut logo" /> */}
           </Link>
         </div>
       </div>

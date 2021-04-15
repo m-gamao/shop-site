@@ -1,14 +1,16 @@
 .btn {
   display: block;
-  width: 100;
+  width: 400px;
   font-size: 1.8rem;
   line-height: 1;
   font-weight: 300;
+  height: 40px;
   text-transform: uppercase;
   color: white;
   background: black;
   padding: 1 rem 0;
-  margin: 0 auto;
+  margin: 10px;
   border: 0;
   outline: none;
+  cursor: pointer;
 }

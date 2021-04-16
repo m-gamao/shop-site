@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import Logo from "./../../assets/logo.png";
+// import Logo from "./../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/utils";
 
@@ -18,28 +18,23 @@ const Header = (props) => {
         </div>
       </div>
       <div className="callToActions">
-
-
         {currentUser && (
           <ul>
             <li>
-              <span onClick={() => auth.signOut()}>
-                LogOut
-              </span>
+              <span onClick={() => auth.signOut()}>LogOut</span>
             </li>
           </ul>
         )}
 
         {!currentUser && (
-        <ul>
-          <li>
-            <Link to="/registration">REGISTER</Link>
-          </li>
-          <li>
-            <Link to="/login">LOGIN</Link>
-          </li>
-        </ul>
-      
+          <ul>
+            <li>
+              <Link to="/registration">REGISTER</Link>
+            </li>
+            <li>
+              <Link to="/login">LOGIN</Link>
+            </li>
+          </ul>
         )}
       </div>
     </header>
@@ -47,6 +42,6 @@ const Header = (props) => {
 };
 
 Header.defaultProps = {
-  currentUser = null
+  currentUser: null,
 };
 export default Header;

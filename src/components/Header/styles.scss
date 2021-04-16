@@ -24,7 +24,7 @@
       font-family: "Zen Dots", cursive;
       font-size: 40px;
       // border: solid 2px red;
-      font: black;
+      font: rgb(12, 10, 10);
 
       img {
         display: block;
@@ -54,7 +54,7 @@
     li {
       display: inline-block;
       list-style-type: none;
-      margin-right: 1.5rem;
+      margin-right: 2rem;
 
       &:last-child {
         margin-right: 0;

@@ -20,16 +20,21 @@
       align-items: center;
 
       .button {
-        background-color: white;
+        background-color: rgb(245, 245, 243);
         // position: absolute; // --- Absolute moves the element to top left corner of the
         //  parent element that it's in.
-        color: rgb(8, 2, 2);
+        color: rgb(56, 12, 114);
         padding: 0px 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 20px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: 600;
         cursor: pointer;
+        border: rgb(80, 80, 79);
+        border-width: 2px;
+        border-radius: 2.5px;
       }
     }
   }

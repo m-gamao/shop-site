@@ -1,6 +1,6 @@
 // In the switch component, route order matters. Because the switch will
 // only display the first route that is matched to the url.
-import React from "react";
+import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import { auth } from "./firebase/utils";
 

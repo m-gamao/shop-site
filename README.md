@@ -1,3 +1,5 @@
 Steps:
 
-1. Video #3 Google sign-in.
+Where I left off:
+
+1. Video #4 about to start.

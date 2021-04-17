@@ -6,7 +6,7 @@
     width: 100%;
     height: 100vh;
 
-    .image {
+    .image1 {
       position: relative;
       width: 50%;
       height: 100%;
@@ -19,22 +19,59 @@
       justify-content: center;
       align-items: center;
 
-      .button {
-        background-color: rgb(245, 245, 243);
+      .button1 {
+        // background-color: rgb(245, 245, 243); //white background
+        background-color: rgb(13, 13, 14);
         // position: absolute; // --- Absolute moves the element to top left corner of the
         //  parent element that it's in.
-        color: rgb(56, 12, 114);
-        padding: 0px 10px;
+        // color: rgb(56, 12, 114); //dark purple font
+        color: white;
+        // padding: 10px 10px 10px 10px;
+        width: 170px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
-        height: 60px;
-        font-size: 18px;
+        // display: inline-block;
+        height: 65px;
+        font-size: 17px;
         font-weight: 600;
         cursor: pointer;
         border: rgb(80, 80, 79);
         border-width: 2px;
-        border-radius: 2.5px;
+        // border-radius: 2.5px;
+      }
+    }
+    .image2 {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      float: left;
+      background-image: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .button2 {
+        // background-color: rgb(245, 245, 243); //white background
+        background-color: rgb(13, 13, 14);
+        // position: absolute; // --- Absolute moves the element to top left corner of the
+        //  parent element that it's in.
+        // color: rgb(56, 12, 114); //dark purple font
+        color: white;
+        // padding: 10px 10px 10px 10px;
+        width: 171px;
+        text-align: center;
+        text-decoration: none;
+        // display: inline-block;
+        height: 65px;
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+        border: rgb(80, 80, 79);
+        border-width: 2px;
+        // border-radius: 2.5px;
       }
     }
   }

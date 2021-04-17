@@ -15,7 +15,7 @@ const Directory = (props) => {
             backgroundImage: `url(${beach1})`,
           }}
         >
-          <Link to="/search/womens">
+          <Link to="/search/surf">
             <Button className="button1">
               {/* <Button style={myStyle}> */}
               <p>SHOP SURF</p>
@@ -28,7 +28,7 @@ const Directory = (props) => {
             backgroundImage: `url(${ski2})`,
           }}
         >
-          <Link to="/search/mens">
+          <Link to="/search/snow">
             <Button className="button2">
               {/* <Button style={myStyle}> */}
               <p>SHOP SNOW</p>

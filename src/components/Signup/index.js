@@ -17,12 +17,19 @@ class Signup extends Component {
     this.state = {
       ...initialState,
     };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(e) {
-    const {}=
+    const { name, value } = e.target;
+
+    this.setState({
+      [name]: value,
+    });
   }
+
   render() {
+    const { displayName, email, password, confirmPassword } = this.state; //destructure displayName and email from state.
     return (
       <div className="signup">
         <div className="wrap">
@@ -31,9 +38,33 @@ class Signup extends Component {
             <FormInput
               type="text"
               name="displayName"
-              value=" "
+              value={displayName}
               placeholder="Full name"
+              onChange={this.handleChange}
             />
+            <FormInput
+              type="email"
+              email="email"
+              value={email}
+              placeholder="Email"
+              onChange={this.handleChange}
+            />
+            <FormInput
+              type="password"
+              name="password"
+              value={password}
+              placeholder="Password"
+              onChange={this.handleChange}
+            />
+            <FormInput
+              type="password"
+              name="confirmPassword"
+              value={confirmPassword}
+              placeholder="Confirm Password"
+              onChange={this.handleChange}
+            />
+
+            <Button type="submit">Register</Button>
           </form>
         </div>
       </div>

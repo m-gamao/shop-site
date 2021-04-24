@@ -12,6 +12,7 @@ const initialState = {
   email: "",
   password: "",
   confirmPassword: "",
+  errors: "",
 };
 
 class Signup extends Component {
@@ -32,23 +33,64 @@ class Signup extends Component {
   }
 
   handleFormSubmit = async (event) => {
-    e.preventDefault(); //prevents the page from refreshing when user hits submit.
+    event.preventDefault(); //prevents the page from refreshing when user hits submit.
     //Next, deconstruct the state into the elements below.
-    const { displayName, email, password, confirmPassword } = this.state;
+    const {
+      displayName,
+      email,
+      password,
+      confirmPassword,
+      errors,
+    } = this.state;
 
-    //Next is validation.You don't want to proceed any further if the pw and conf pw don't match:
+    //Next is validation.You don't want to proceed any further if the pw and conf pw don't match-
+    //So, you return an error (err) if this happens.
     if (password !== confirmPassword) {
-      const err = ["Password Don\'t match];
-      
+      const err = ["Password Doesn't match"];
+      this.setState({
+        errors: err,
+      });
+      return;
+    }
+    //To catch errors:
+    try {
+      //async await returns a promise. Destructure the user object below:
+      const { user } = await auth.createUserWithEmailAndPassword(
+        //this method expects the below:
+        email,
+        password
+      );
+      await handleUserProfile(user, { displayName });
+      this.setState({
+        ...initialState,
+      });
+    } catch (err) {
+      // console.log(err);
     }
   };
 
+  //We also want to render an error if there is one.
+  //So we destructure the error method array in here too.
   render() {
-    const { displayName, email, password, confirmPassword } = this.state; //destructure displayName and email from state.
+    const {
+      displayName,
+      email,
+      password,
+      confirmPassword,
+      errors,
+    } = this.state; //destructure displayName, email, pw, cpw, and errors from state.
     return (
       <div className="signup">
         <div className="wrap">
           <h2>Signup</h2>
+          {errors.length > 0 && (
+            <ul>
+              {errors.map((err, index) => {
+                return <li key={index}>{err}</li>;
+              })}
+              ;
+            </ul>
+          )}
           <div className="formWrap">
             <form onSubmit={this.handleFormSubmit}>
               <FormInput

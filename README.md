@@ -1,11 +1,9 @@
 Steps:
 
-Where I left off:
+**Where I left off:**
 
-_Watching_:
+Watched:
+Video 5 (8:12)
 
-Video 5- 8:12mins
-
-**Coding**:
-
-1. Video #4: (24.42)
+Coded:
+Video 4: (24.42)

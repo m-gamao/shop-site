@@ -46,7 +46,7 @@ class Signup extends Component {
     //Next is validation.You don't want to proceed any further if the pw and conf pw don't match-
     //So, you return an error (err) if this happens.
     if (password !== confirmPassword) {
-      const err = ["Password Doesn't match"];
+      const err = ["Passwords Do Not Match"];
       this.setState({
         errors: err,
       });
@@ -83,7 +83,8 @@ class Signup extends Component {
       <div className="signup">
         <div className="wrap">
           <h2>Signup</h2>
-          {errors.length > 0 && (
+          {errors.length > 0 && ( //If the errors length is greater than 0, then return an unordered list,
+            //and map through that error's array to show all the errors.
             <ul>
               {errors.map((err, index) => {
                 return <li key={index}>{err}</li>;

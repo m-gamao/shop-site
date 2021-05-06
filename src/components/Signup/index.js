@@ -52,7 +52,7 @@ class Signup extends Component {
       });
       return;
     }
-    //To catch errors:
+    //To catch any errors that occur, add a "Try Catch":
     try {
       //async await returns a promise. Destructure the user object below:
       const { user } = await auth.createUserWithEmailAndPassword(
@@ -60,7 +60,8 @@ class Signup extends Component {
         email,
         password
       );
-      await handleUserProfile(user, { displayName });
+      await handleUserProfile(user, { displayName }); //Once the user is signed up and registered,
+      //we want to restore the initial state (below), and simply reset the form.
       this.setState({
         ...initialState,
       });

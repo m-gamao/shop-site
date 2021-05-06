@@ -90,7 +90,7 @@ class App extends Component {
             }
           />
           <Route
-            path="./recovery"
+            path="/recovery"
             render={() => (
               <MainLayout>
                 <Recovery />

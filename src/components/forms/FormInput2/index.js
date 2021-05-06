@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
 
-const formInput = ({ handleChange, label, ...otherProps }) => {
+const FormInput2 = ({ handleChange, label, ...otherProps }) => {
   return (
     <div className="formRow">
       {label && <label>{label}</label>}
@@ -10,4 +10,4 @@ const formInput = ({ handleChange, label, ...otherProps }) => {
   );
 };
 
-export default formInput;
+export default FormInput2;

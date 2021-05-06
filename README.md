@@ -5,8 +5,8 @@ Steps:
 Watched:
 Video 5 (8:12)
 
-Coded:
-Video 4: (24.42)
+Code:
+Next - video 5.
 
 Problems:
 

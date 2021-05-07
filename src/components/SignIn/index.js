@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./styles.scss";
 
 import AuthWrapper from "./../AuthWrapper";
-import FormInput from "./../forms/formInput";
+import FormInput from "./../forms/FormInput";
 import Button from "./../forms/Button";
 import { signInWithGoogle, auth } from "./../../firebase/utils";
 

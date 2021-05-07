@@ -5,7 +5,7 @@ import "./styles.scss";
 import { auth, handleUserProfile } from "./../../firebase/utils";
 
 import AuthWrapper from "./../AuthWrapper";
-import FormInput from "./../forms/formInput";
+import FormInput from "./../forms/FormInput";
 import Button from "./../forms/Button";
 
 const initialState = {

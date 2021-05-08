@@ -5,6 +5,8 @@ import AuthWrapper from "./../AuthWrapper";
 import FormInput from "./../forms/FormInput";
 import Button from "./../forms/Button";
 
+import { auth } from "./../../firebase/utils";
+
 const initialState = {
   email: "",
 };
@@ -26,11 +28,22 @@ class EmailPassword extends Component {
     });
   }
 
-  //Allows user to submit the form and capture the user's email. Needs to be integrated with firebase
-  //so that user can submit the email and firebase can send them a reset password email.
+  //Allows user to submit the form and capture the user's email. Needs to be integrated with
+  //firebase so that user can submit the email and firebase can send them a reset password email.
   handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const { email } = this.state;
+      const config = {
+        url: "https://localhost:3000/login",
+      };
+      await auth.sendPasswordResetEmail(email, config);
+      .then(() => {
+        console.log("Password Reset");
+      })
+      .catch(() => {
+        console.log("Something went wrong");
+      });
     } catch (err) {
       //console.log(err)
     }

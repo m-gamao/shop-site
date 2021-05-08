@@ -2,11 +2,8 @@ Steps:
 
 **Where I left off:**
 
-Watched:
-Video 5 (8:12)
-
 Code:
-Next - video 5.(24:56)
+Next - video 5.(34:37) Problem- error on the .then
 
 Problems:
 
